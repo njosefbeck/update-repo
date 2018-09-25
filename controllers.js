@@ -27,6 +27,7 @@ function updateRepo(req, res) {
   repo.cdToDir();
   repo.gitPull();
   repo.npmUpdate();
+  res.end();
 }
 
 function send404(req, res) {
